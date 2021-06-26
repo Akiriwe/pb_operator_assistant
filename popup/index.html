@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>PrivatBank Assistant</title>
+</head>
+
+<body>
+    <div id="popup_content">
+        <form id="add_client">
+            <input type="text" name="client_name_input" autocomplete="off" placeholder="ПІБ клієнта" />
+            <textarea name="recall_purpose_input" rows="3" placeholder="Мета дзвінка"></textarea>
+            <div id="phone_and_time_to_recall">
+                <input type="text" name="client_phone_number_input" autocomplete="off" placeholder="Телефон клієнта" />
+                <input type="time" name="time_to_recall_input" title="Час, коли треба передзвонити" />
+                <button id="add_client_button" type="submit" title="Додати запис">Button</button>
+            </div>
+        </form>
+        <div id="client_list">
+        </div>
+    </div>
+
+    <footer>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </footer>
+</body>
+
+</html>

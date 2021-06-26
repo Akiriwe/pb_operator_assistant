@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "PrivatBank Assistant",
+  "version": "1.0",
+  "description": "Adds functionality in order to help PrivatBank call center operators.",
+  "icons": {
+    "48": "icons/cc_operator.svg",
+    "96": "icons/cc_operator.svg"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "icons/cc_operator.svg",
+    "default_title": "PrivatBank Assistant",
+    "default_popup": "popup/index.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "nata1016587@gmail.com",
+      "strict_min_version": "64.0"
+    }
+  }
+}

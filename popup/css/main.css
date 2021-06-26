@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,600;1,300;1,600&family=Comfortaa:wght@300;700&display=swap");
+* {
+    box-sizing: border-box;
+    scrollbar-color: rgba(255, 255, 255, 0.5) #11ffee00;
+    scrollbar-width: thin;
+}
+
+body {
+    font-family: "Comfortaa", cursive;
+    background-color: rgb(217, 127, 140);
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+    display: block;
+    margin: 0;
+    min-height: 50vh;
+}
+
+#popup_content {
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+input[name="client_name_input"] {
+    width: 100%;
+}
+
+#phone_and_time_to_recall {
+    width: 100%;
+}
+
+input[name="client_phone_number_input"] {
+    width: 52%;
+}
+
+input[name="time_to_recall_input"] {
+    width: 29%;
+}
+
+input, textarea {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    font-family: "Bitter";
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#add_client_button {
+    background-color: transparent;
+    border: none;
+    width: 15%;
+    cursor: pointer;
+    background-image: url(../../icons/plus_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    height: 50px;
+}
+
+textarea[name="recall_purpose_input"] {
+    resize: none;
+    width: 100%;
+    padding: 0;
+    border: 1rem solid transparent;
+}
+
+textarea:focus, input:focus, button:focus {
+    outline: none;
+}
+
+.up_client_info {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);;
+}
+
+.client {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(131, 60, 60, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+
+}
+
+button[name="remove_client"] {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url(../../icons/remove_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: transparent;
+    height: 15px;
+    display: inline-block;
+}
+
+button[name="copy_ukrainian"] {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url(../../icons/ukraine_48.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+    color: transparent;
+    height: 15px;
+    display: inline-block;
+}
+
+button[name="copy_jabber"] {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url(../../icons/jabber_256.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+    color: transparent;
+    height: 15px;
+    display: inline-block;
+}
+
+.remove_client_form {
+    display: inline-block;
+    width: 4%;
+}
+
+.time_to_recall {
+    display: inline-block;
+    font-weight: bold;
+    width: 93%;
+}
+
+.phone_number_icon {
+    display: inline-block;
+    background-image: url(../../icons/phone_icon_48.png);
+    height: 15px;
+    width: 15px;
+    background-size: 100%;
+}
+
+.phone_info {
+    margin: 10px 0;
+}
+
+.client_phone_number {
+    margin-right: 5px;
+    font-style: italic;
+    display: inline-block;
+}
+
+.copy_number {
+    display: inline-block;
+}
+
+.client_name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
